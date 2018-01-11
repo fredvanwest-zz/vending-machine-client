@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Vending Machine Inventory</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet" />
+</head>
+<body>
+        <div class="row">
+                <div class="col-md-12" style="text-align:center">
+                        <h1>Vending Machine Inventory</h1>
+                </div>
+        </div>
+        <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8" style="background-color:black;color:#ff9966;height:300px;font-family: 'Bungee Inline', cursive; border: 5px solid #ff9966">
+                        <div class="pull-left" style="font-size:30px">&nbsp;&nbsp;COKE:&nbsp;&nbsp;</div><div class="pull-left" style="font-size:30px" th:text="${numCoke}"></div>
+                        <div class="pull-left" style="font-size:30px">&nbsp;&nbsp;DIET COKE:&nbsp;&nbsp;</div><div class="pull-left" style="font-size:30px" th:text="${numDietCoke}">&nbsp;&nbsp;</div> 
+                        <div class="pull-left" style="font-size:30px">&nbsp;&nbsp;SPRITE:&nbsp;&nbsp;</div><div class="pull-left" style="font-size:30px" th:text="${numSprite}">&nbsp;&nbsp;</div> 
+                        <div class="pull-left" style="font-size:30px">&nbsp;&nbsp;DR PEPPER:&nbsp;&nbsp;</div><div class="pull-left" style="font-size:30px" th:text="${numDrPepper}">&nbsp;&nbsp;</div> 
+                        <div class="pull-left" style="font-size:30px">&nbsp;&nbsp;DASANI:&nbsp;&nbsp;</div><div class="pull-left" style="font-size:30px" th:text="${numDasani}">&nbsp;&nbsp;</div>     
+                </div>
+                <div class="col-md-2"></div>
+        </div>
+
+</body>
+</html>
